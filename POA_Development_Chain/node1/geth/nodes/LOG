@@ -1,0 +1,69 @@
+=============== Jan 17, 2022 (EST) ===============
+17:50:50.711322 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:50:50.750867 db@open opening
+17:50:50.751346 version@stat F·[] S·0B[] Sc·[]
+17:50:50.788567 db@janitor F·2 G·0
+17:50:50.788726 db@open done T·37.815721ms
+=============== Jan 17, 2022 (EST) ===============
+17:51:56.000655 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:51:56.001484 version@stat F·[] S·0B[] Sc·[]
+17:51:56.001512 db@open opening
+17:51:56.001586 journal@recovery F·1
+17:51:56.001686 journal@recovery recovering @1
+17:51:56.021818 memdb@flush created L0@2 N·2 S·176B "loc..seq,v2":"version,v1"
+17:51:56.022125 version@stat F·[1] S·176B[176B] Sc·[0.25]
+17:51:56.080800 db@janitor F·3 G·0
+17:51:56.080856 db@open done T·79.330165ms
+18:11:00.645175 db@close closing
+18:11:00.645724 db@close done T·545.388µs
+=============== Jan 17, 2022 (EST) ===============
+18:11:06.287100 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:11:06.287454 version@stat F·[1] S·176B[176B] Sc·[0.25]
+18:11:06.287483 db@open opening
+18:11:06.287558 journal@recovery F·1
+18:11:06.287651 journal@recovery recovering @3
+18:11:06.323388 memdb@flush created L0@5 N·10527 S·271KiB "loc..seq,v24":"n:\xff..ong,v2657"
+18:11:06.324092 version@stat F·[2] S·271KiB[271KiB] Sc·[0.50]
+18:11:06.392212 db@janitor F·4 G·0
+18:11:06.392337 db@open done T·104.837811ms
+18:11:06.408119 table@compaction L0·2 -> L1·0 S·271KiB Q·10532
+18:11:06.435900 table@build created L1@8 N·5182 S·191KiB "loc..seq,v24":"version,v1"
+18:11:06.436067 version@stat F·[0 1] S·191KiB[0B 191KiB] Sc·[0.00 0.00]
+18:11:06.455791 table@compaction committed F-1 S-80KiB Ke·0 D·5347 T·47.605828ms
+18:11:06.456360 table@remove removed @2
+18:12:36.611973 db@close closing
+18:12:36.612744 db@close done T·768.073µs
+=============== Jan 17, 2022 (EST) ===============
+18:12:39.405007 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:12:39.405478 version@stat F·[0 1] S·191KiB[0B 191KiB] Sc·[0.00 0.00]
+18:12:39.405511 db@open opening
+18:12:39.405591 journal@recovery F·1
+18:12:39.405694 journal@recovery recovering @6
+18:12:39.426022 memdb@flush created L0@9 N·533 S·18KiB "loc..seq,v10551":"n:\xff..ong,v10975"
+18:12:39.426942 version@stat F·[1 1] S·209KiB[18KiB 191KiB] Sc·[0.25 0.00]
+18:12:39.490565 db@janitor F·5 G·1
+18:12:39.490601 db@janitor removing table-5
+18:12:39.490850 db@open done T·85.324752ms
+18:12:39.506427 table@compaction L0·1 -> L1·1 S·209KiB Q·11066
+18:12:39.530801 table@build created L1@12 N·5642 S·207KiB "loc..seq,v10551":"version,v1"
+18:12:39.530984 version@stat F·[0 1] S·207KiB[0B 207KiB] Sc·[0.00 0.00]
+18:12:39.550747 table@compaction committed F-1 S-2KiB Ke·0 D·73 T·44.206713ms
+18:12:39.551605 table@remove removed @8
+18:14:53.218081 db@close closing
+18:14:53.219516 db@close done T·1.429594ms
+=============== Jan 17, 2022 (EST) ===============
+18:20:24.218545 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:20:24.219156 version@stat F·[0 1] S·207KiB[0B 207KiB] Sc·[0.00 0.00]
+18:20:24.219184 db@open opening
+18:20:24.219308 journal@recovery F·1
+18:20:24.219402 journal@recovery recovering @10
+18:20:24.240242 memdb@flush created L0@13 N·746 S·25KiB "loc..seq,v11082":"n:\xff..ong,v11084"
+18:20:24.240987 version@stat F·[1 1] S·232KiB[25KiB 207KiB] Sc·[0.25 0.00]
+18:20:24.309743 db@janitor F·5 G·1
+18:20:24.309812 db@janitor removing table-9
+18:20:24.310243 db@open done T·91.042833ms
+18:20:24.327581 table@compaction L0·1 -> L1·1 S·232KiB Q·11813
+18:20:24.351280 table@build created L1@16 N·6291 S·230KiB "loc..seq,v11082":"version,v1"
+18:20:24.351439 version@stat F·[0 1] S·230KiB[0B 230KiB] Sc·[0.00 0.00]
+18:20:24.371275 table@compaction committed F-1 S-2KiB Ke·0 D·97 T·43.619879ms
+18:20:24.372216 table@remove removed @12

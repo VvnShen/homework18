@@ -1,0 +1,35 @@
+=============== Jan 17, 2022 (EST) ===============
+17:55:23.745023 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:55:23.783981 db@open opening
+17:55:23.784405 version@stat F·[] S·0B[] Sc·[]
+17:55:23.839498 db@janitor F·2 G·0
+17:55:23.839615 db@open done T·55.600279ms
+18:12:03.310513 db@close closing
+18:12:03.311112 db@close done T·596.159µs
+=============== Jan 17, 2022 (EST) ===============
+18:12:05.595116 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:12:05.595886 version@stat F·[] S·0B[] Sc·[]
+18:12:05.595962 db@open opening
+18:12:05.596516 journal@recovery F·1
+18:12:05.596605 journal@recovery recovering @1
+18:12:05.633665 memdb@flush created L0@2 N·7351 S·200KiB "loc..seq,v27":"version,v1"
+18:12:05.634162 version@stat F·[1] S·200KiB[200KiB] Sc·[0.25]
+18:12:05.699863 db@janitor F·3 G·0
+18:12:05.699983 db@open done T·103.986885ms
+18:12:34.243751 db@close closing
+18:12:34.243983 db@close done T·230.231µs
+=============== Jan 17, 2022 (EST) ===============
+18:12:54.475541 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:12:54.475758 version@stat F·[1] S·200KiB[200KiB] Sc·[0.25]
+18:12:54.475783 db@open opening
+18:12:54.475849 journal@recovery F·1
+18:12:54.476317 journal@recovery recovering @3
+18:12:54.496841 memdb@flush created L0@5 N·224 S·8KiB "loc..seq,v7373":"n:\xff..ong,v7481"
+18:12:54.497678 version@stat F·[2] S·208KiB[208KiB] Sc·[0.50]
+18:12:54.558484 db@janitor F·4 G·0
+18:12:54.558547 db@open done T·82.751861ms
+18:12:54.571458 table@compaction L0·2 -> L1·0 S·208KiB Q·7577
+18:12:54.595570 table@build created L1@8 N·4193 S·155KiB "loc..seq,v7373":"version,v1"
+18:12:54.595697 version@stat F·[0 1] S·155KiB[0B 155KiB] Sc·[0.00 0.00]
+18:12:54.615494 table@compaction committed F-1 S-53KiB Ke·0 D·3382 T·43.958415ms
+18:12:54.616084 table@remove removed @2
