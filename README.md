@@ -26,12 +26,10 @@ geth --datadir node2 init ./viviancoin.json
 <img width="1430" alt="image" src="https://user-images.githubusercontent.com/88476898/151480552-33dbdaff-f1f9-4913-8d88-5e3a81cb7645.png">
 
 
-2. open mycrypto, change network to customized one
+5.  open mycrypto, change network to customized one
 	With network name: viviancoin; chain ID=50599
 	
-3. Send test transactions
-
-
+6. Send test transactions
 
 
 
