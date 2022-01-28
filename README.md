@@ -2,28 +2,32 @@
 1. create new nodes by giving your own password:
 geth --datadir node1 account new
 geth --datadir node2 account new
-<img width="892" alt="image" src="https://user-images.githubusercontent.com/88476898/151476196-d45de5e2-79de-401c-84ef-1917079075f6.png">
+<img width="894" alt="image" src="https://user-images.githubusercontent.com/88476898/151478790-dd66d5f3-8c53-4aa1-990a-6a5adbba07ce.png">
+make a note of the two public keys:
+node1: 0xE597D6E5d2AC1D7e1dc12B04623648ACEB9F36dB
+node 2: 0xD408f4eBb7aF6ce085Ac9c47D826A9B0AC05eBdE
 
 2. run puppeth under the tool directory to generate your genesis block 
+<img width="668" alt="image" src="https://user-images.githubusercontent.com/88476898/151479054-1444547c-23d1-45c1-9c9e-54f0701371b7.png">
+D408f4eBb7aF6ce085Ac9c47D826A9B0AC05eBdE
 
-<img width="734" alt="image" src="https://user-images.githubusercontent.com/88476898/151476981-4446d318-7318-4188-a3cc-64a30cc05b6e.png">
-As I have already configured a genesis block, so I can export the configration directly. If you need to configure a new one, you can follow the questions, to choose PoA consensus algorism.
 
 3. initilize nodes
-geth --datadir node1 init ./vvncoin.json
-geth --datadir node2 init ./vvncoin.json
-<img width="1425" alt="image" src="https://user-images.githubusercontent.com/88476898/151477355-a97928a4-672b-4099-970f-8e8f4111da24.png">
+geth --datadir node1 init ./viviancoin.json
+geth --datadir node2 init ./viviancoin.json
+<img width="1430" alt="image" src="https://user-images.githubusercontent.com/88476898/151479419-6129b1c5-75b5-4b30-8fa3-335ea057667a.png">
 
 
+4. begin mining by opening two terminals. type in password.
+../geth --datadir node1 --unlock 0xE597D6E5d2AC1D7e1dc12B04623648ACEB9F36dB --mine --rpc --allow-insecure-unlock
 
+../geth --datadir node2 --unlock 0xD408f4eBb7aF6ce085Ac9c47D826A9B0AC05eBdE --mine --port 30304 --bootnodes "enode://3b5f6c15ebcca24eb1e384e416f09fb9200d1ca3faf56d2c42aab7a5beff5fe87f9872a91b6b4b0e2485ba10b8fe98fb6419dfae2a2fd046fe5e201fb0bfc64d@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
+<img width="1435" alt="image" src="https://user-images.githubusercontent.com/88476898/151480392-57a55b31-6dfb-4373-9d41-a63c838a5746.png">
+<img width="1430" alt="image" src="https://user-images.githubusercontent.com/88476898/151480552-33dbdaff-f1f9-4913-8d88-5e3a81cb7645.png">
 
-	1. Initialize two nodes after you have downloaded attached folders to your local desktop:
-../geth --datadir node1 --unlock 0x24a4fC1fC703c91E36C40e3c48EC79d6DcE75c10 --mine --rpc --allow-insecure-unlock
-
-../geth --datadir node2 --unlock 0x33E47e6ff72A7954D2e8b272c2A29d86af4C7881 --mine --port 30304 --bootnodes "enode://200cdd09708b8cddabc6b6802650df2afbaefed1cc8589c1db044323a290a34339c452904d29f1c0fcbfaef5e6bca56c16d9b2340af4f33a8809c45bd1ea5937@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
 
 2. open mycrypto, change network to customized one
-	With network name: viviancoin; chain ID=9875
+	With network name: viviancoin; chain ID=50599
 	
 3. Send test transactions![image](https://user-images.githubusercontent.com/88476898/149864800-f52d469e-75d5-4605-a110-7a9e1bdb61c3.png)
 
