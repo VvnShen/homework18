@@ -6,6 +6,13 @@ geth --datadir node2 account new
 
 2. run puppeth under the tool directory to generate your genesis block 
 
+<img width="734" alt="image" src="https://user-images.githubusercontent.com/88476898/151476981-4446d318-7318-4188-a3cc-64a30cc05b6e.png">
+As I have already configured a genesis block, so I can export the configration directly. If you need to configure a new one, you can follow the questions, to choose PoA consensus algorism.
+
+3. initilize nodes
+geth --datadir node1 init ./vvncoin.json
+geth --datadir node2 init ./vvncoin.json
+<img width="1425" alt="image" src="https://user-images.githubusercontent.com/88476898/151477355-a97928a4-672b-4099-970f-8e8f4111da24.png">
 
 
 
