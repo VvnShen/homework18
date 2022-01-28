@@ -1,4 +1,15 @@
 ##POA Development Chain - instructions:
+1. create new nodes by giving your own password:
+geth --datadir node1 account new
+geth --datadir node2 account new
+<img width="892" alt="image" src="https://user-images.githubusercontent.com/88476898/151476196-d45de5e2-79de-401c-84ef-1917079075f6.png">
+
+2. run puppeth under the tool directory to generate your genesis block 
+
+
+
+
+
 	1. Initialize two nodes after you have downloaded attached folders to your local desktop:
 ../geth --datadir node1 --unlock 0x24a4fC1fC703c91E36C40e3c48EC79d6DcE75c10 --mine --rpc --allow-insecure-unlock
 
